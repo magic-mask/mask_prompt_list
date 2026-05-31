@@ -78,3 +78,35 @@ NEGATIVE_PROMPT = (
 
 <img src="imgs/removing_mask/seed63492050.png">
 
+
+### 프롬프트
+
+
+```bash
+PROMPT = (
+    "(((removing face mask))), "
+    "((hand pulling mask down)),         # 단어 수 줄임"
+    "((both hands reaching for mask straps)), "  # 추가
+    "mask straps being lifted off ears, "        # 동작 구체화
+    "mask halfway off, motion blur, "
+    "candid photo, young East Asian woman, "
+    "relieved expression, bathroom, "
+    "smartphone photo, film grain, "
+    "photorealistic"                           # hyperrealistic 제거 (중복)
+)
+
+NEGATIVE_PROMPT = (
+    "mask fully on, "
+    "mask fully off, "
+    "static pose, "
+    "both hands down, "
+    "studio lighting, "                  # 추가: 너무 인위적인 조명 제거
+    "perfect skin, smooth skin, "        # 추가: 과도한 보정 제거
+    "oversaturated, "                    # 추가
+    "worst quality, low quality, illustration, anime, cartoon, "
+    "3d, painting, sketch, blurry, watermark, text, "
+    "deformed face, bad anatomy, bad hands, extra fingers"
+)
+```
+
+<img src="imgs/removing_mask/seed17359453.png">
