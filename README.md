@@ -110,3 +110,42 @@ NEGATIVE_PROMPT = (
 ```
 
 <img src="imgs/removing_mask/seed17359453.png">
+
+
+## 성공 
+
+GUIDANCE_SCALE = 7
+
+STEPS = 30
+
+### prompt
+
+```bash
+PROMPT = (
+    "(((face mask fully lowered to neck))),"
+    "((nose fully visible, ))"
+    "mask completely below chin, "
+    "mask resting on neck, "
+    "mask no longer touching face, "
+    "ear loops attached to both ears, "
+    "entire face uncovered, "
+    "candid smartphone photo"
+    "young East Asian woman, "
+)
+#    "mouth fully visible, "
+
+NEGATIVE_PROMPT = (
+    "mask covering mouth, "
+    "mask covering nose, "
+    "mask on face, "
+    "mask under nose, "
+    "mask touching lips, "
+    "mask resting on mouth, "
+    "properly worn mask, "
+    "worst quality, low quality, illustration, anime, cartoon, "
+    "3d, painting, sketch, blurry, watermark, text, "
+    "deformed face, bad anatomy"
+)
+```
+
+<img src="imgs/removing_mask/seed32881110.png">
